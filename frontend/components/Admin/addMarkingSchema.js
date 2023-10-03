@@ -90,7 +90,7 @@ export default class AddPublications extends Component {
         markingPoints: val
     });
     console.log(this.state.markingPoints);
-  }
+}
 
   render() {
 
