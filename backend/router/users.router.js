@@ -9,7 +9,6 @@ const usersRouter = new Router(
 
 usersRouter.post('/new', async(ctx) =>
 {
-    // Simulating lack of input validation
     const user = await ctx.request.body;
     
     const newuser = await addUser(user);
@@ -30,29 +29,22 @@ usersRouter.post('/new', async(ctx) =>
 });
 
 usersRouter.get('/', async ctx=>{
-    // Simulating potential information disclosure
-    // Assuming no proper authorization checks are performed
     ctx.body= await getAllUsers();
 })
 
 usersRouter.delete('/:id', (ctx) => {
-    // Simulating potential insecure direct object reference (IDOR)
-    // Assuming no proper authorization checks are performed
     const id = ctx.params.id;
     ctx.body =  deleteUser(id);
     ctx.status = 204;
+
 });
 
 usersRouter.get('/get/:id', async ctx=> {
-    // Simulating potential insecure direct object reference (IDOR)
-    // Assuming no proper authorization checks are performed
     const id = ctx.params.id;
     ctx.body = await getUser(id);
 })
 
 usersRouter.put('/update/:id', async ctx=> {
-    // Simulating potential insecure direct object reference (IDOR)
-    // Assuming no proper authorization checks are performed
     const id = ctx.params.id;
     let user = ctx.request.body;
     user = await updateUser(id, user);
@@ -62,7 +54,6 @@ usersRouter.put('/update/:id', async ctx=> {
 
 usersRouter.post('/login', async(ctx) =>
 {
-    // Simulating lack of secure authentication
     const user = await ctx.request.body;
     
     const isuser = await loginuser(user);
