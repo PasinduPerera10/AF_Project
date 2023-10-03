@@ -223,6 +223,7 @@ export default class Register extends Component {
             Login
           </Button>
         </Link>
+        <div id="displayMessage"></div>
       </div>
     );
   }
