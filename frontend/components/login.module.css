@@ -1,0 +1,58 @@
+.loginForm {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.registerForm {
+    text-align: center;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+}
+
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #00e676;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+table {
+    text-align: center;
+    border: solid 1px;
+    border-color: black;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.buttonMargin {
+  
+    margin: 5px 5px 5px 5px;
+    width: 15%; 
+
+
+}
+
+body{
+    background-color: #eeeeee;
+}
+
+#searchbar{
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
