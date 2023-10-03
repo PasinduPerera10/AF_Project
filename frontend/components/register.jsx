@@ -76,6 +76,12 @@ export default class Register extends Component {
       reg: this.state.registationnum,
     };
 
+
+    if (this.state.password != this.state.password2) {
+      alert("Passwords do not match!");
+      return;
+    }
+
     const displayMessage = `<div>Your registration was successful, ${user.name}!</div>`;
     document.getElementById('displayMessage').innerHTML = displayMessage;
 

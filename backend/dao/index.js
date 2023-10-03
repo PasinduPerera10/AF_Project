@@ -1,6 +1,6 @@
 import {MongoClient} from "mongodb"
 
-const client = new MongoClient('mongodb+srv://dbuser:db123@cluster0.ykhdc.mongodb.net/?retryWrites=true&w=majority', {
+const client = new MongoClient('mongodb+srv://Pasindu:Pasindu@cluster0.4fhs7.mongodb.net/abcd', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
